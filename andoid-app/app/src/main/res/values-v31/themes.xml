@@ -1,0 +1,6 @@
+<resources>
+    <style name="Theme.StopNShop" parent="Base.Theme.StopNShop">
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+    </style>
+</resources>

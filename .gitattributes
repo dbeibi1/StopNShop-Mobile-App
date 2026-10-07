@@ -1,0 +1,9 @@
+# Preserve source documents, visual evidence and APK bytes during checkout.
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.apk binary
+*.zip binary
+*.jar binary

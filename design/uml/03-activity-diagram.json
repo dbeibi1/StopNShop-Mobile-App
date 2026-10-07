@@ -1,0 +1,679 @@
+{
+  "title": "Shopping and checkout activity diagram",
+  "width": 1000,
+  "height": 1090,
+  "nodes": [
+    {
+      "id": "launch",
+      "kind": "action",
+      "bounds": [
+        80,
+        110,
+        270,
+        65
+      ],
+      "lines": [
+        "Fresh splash then Home"
+      ]
+    },
+    {
+      "id": "browse",
+      "kind": "action",
+      "bounds": [
+        80,
+        210,
+        270,
+        65
+      ],
+      "lines": [
+        "Browse products"
+      ]
+    },
+    {
+      "id": "view_details",
+      "kind": "decision",
+      "center": [
+        215,
+        370
+      ],
+      "lines": [
+        "View details?"
+      ]
+    },
+    {
+      "id": "details",
+      "kind": "action",
+      "bounds": [
+        380,
+        337,
+        210,
+        66
+      ],
+      "lines": [
+        "Read details",
+        "select quantity"
+      ]
+    },
+    {
+      "id": "add",
+      "kind": "action",
+      "bounds": [
+        80,
+        460,
+        270,
+        65
+      ],
+      "lines": [
+        "Add selected product"
+      ]
+    },
+    {
+      "id": "more",
+      "kind": "decision",
+      "center": [
+        215,
+        600
+      ],
+      "lines": [
+        "Shop more?"
+      ]
+    },
+    {
+      "id": "cart",
+      "kind": "action",
+      "bounds": [
+        80,
+        670,
+        270,
+        65
+      ],
+      "lines": [
+        "View or change cart"
+      ]
+    },
+    {
+      "id": "empty",
+      "kind": "decision",
+      "center": [
+        215,
+        820
+      ],
+      "lines": [
+        "Cart empty?"
+      ]
+    },
+    {
+      "id": "empty_notice",
+      "kind": "action",
+      "bounds": [
+        380,
+        787,
+        210,
+        66
+      ],
+      "lines": [
+        "Show Browse",
+        "products action"
+      ]
+    },
+    {
+      "id": "review",
+      "kind": "action",
+      "bounds": [
+        650,
+        110,
+        270,
+        65
+      ],
+      "lines": [
+        "Snapshot cart",
+        "obtain review token"
+      ]
+    },
+    {
+      "id": "input",
+      "kind": "action",
+      "bounds": [
+        650,
+        210,
+        270,
+        65
+      ],
+      "lines": [
+        "Enter details",
+        "review order"
+      ]
+    },
+    {
+      "id": "valid",
+      "kind": "decision",
+      "center": [
+        785,
+        370
+      ],
+      "lines": [
+        "Valid input?"
+      ]
+    },
+    {
+      "id": "errors",
+      "kind": "action",
+      "bounds": [
+        380,
+        420,
+        210,
+        65
+      ],
+      "lines": [
+        "Show field errors",
+        "keep inputs"
+      ]
+    },
+    {
+      "id": "matches",
+      "kind": "decision",
+      "center": [
+        785,
+        530
+      ],
+      "lines": [
+        "Review valid?"
+      ]
+    },
+    {
+      "id": "changed",
+      "kind": "action",
+      "bounds": [
+        380,
+        552,
+        210,
+        73
+      ],
+      "lines": [
+        "Reject stale review",
+        "return to Cart"
+      ]
+    },
+    {
+      "id": "submit",
+      "kind": "action",
+      "bounds": [
+        650,
+        680,
+        270,
+        82
+      ],
+      "lines": [
+        "Create immutable order",
+        "cache completed token",
+        "clear cart once"
+      ]
+    },
+    {
+      "id": "confirmation",
+      "kind": "action",
+      "bounds": [
+        650,
+        810,
+        270,
+        65
+      ],
+      "lines": [
+        "Show demo confirmation"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "points": [
+        [
+          215,
+          92
+        ],
+        [
+          215,
+          110
+        ]
+      ],
+      "label": null,
+      "label_position": null,
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          215,
+          175
+        ],
+        [
+          215,
+          210
+        ]
+      ],
+      "label": null,
+      "label_position": null,
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          215,
+          275
+        ],
+        [
+          215,
+          333
+        ]
+      ],
+      "label": null,
+      "label_position": null,
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          310,
+          370
+        ],
+        [
+          380,
+          370
+        ]
+      ],
+      "label": "[yes]",
+      "label_position": [
+        325,
+        356
+      ],
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          485,
+          403
+        ],
+        [
+          485,
+          409
+        ],
+        [
+          367,
+          409
+        ],
+        [
+          367,
+          495
+        ],
+        [
+          350,
+          495
+        ]
+      ],
+      "label": null,
+      "label_position": null,
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          215,
+          407
+        ],
+        [
+          215,
+          460
+        ]
+      ],
+      "label": "[no]",
+      "label_position": [
+        229,
+        438
+      ],
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          215,
+          525
+        ],
+        [
+          215,
+          562
+        ]
+      ],
+      "label": null,
+      "label_position": null,
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          120,
+          600
+        ],
+        [
+          55,
+          600
+        ],
+        [
+          55,
+          243
+        ],
+        [
+          80,
+          243
+        ]
+      ],
+      "label": "[yes]",
+      "label_position": [
+        57,
+        550
+      ],
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          215,
+          637
+        ],
+        [
+          215,
+          670
+        ]
+      ],
+      "label": "[no]",
+      "label_position": [
+        231,
+        661
+      ],
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          215,
+          735
+        ],
+        [
+          215,
+          782
+        ]
+      ],
+      "label": null,
+      "label_position": null,
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          310,
+          820
+        ],
+        [
+          380,
+          820
+        ]
+      ],
+      "label": "[yes]",
+      "label_position": [
+        321,
+        804
+      ],
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          485,
+          853
+        ],
+        [
+          485,
+          887
+        ],
+        [
+          27,
+          887
+        ],
+        [
+          27,
+          225
+        ],
+        [
+          80,
+          225
+        ]
+      ],
+      "label": null,
+      "label_position": null,
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          215,
+          858
+        ],
+        [
+          215,
+          965
+        ],
+        [
+          622,
+          965
+        ],
+        [
+          622,
+          143
+        ],
+        [
+          650,
+          143
+        ]
+      ],
+      "label": "[no]",
+      "label_position": [
+        232,
+        923
+      ],
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          785,
+          175
+        ],
+        [
+          785,
+          210
+        ]
+      ],
+      "label": null,
+      "label_position": null,
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          785,
+          275
+        ],
+        [
+          785,
+          333
+        ]
+      ],
+      "label": null,
+      "label_position": null,
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          690,
+          370
+        ],
+        [
+          610,
+          370
+        ],
+        [
+          610,
+          453
+        ],
+        [
+          590,
+          453
+        ]
+      ],
+      "label": "[no]",
+      "label_position": [
+        625,
+        356
+      ],
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          485,
+          485
+        ],
+        [
+          600,
+          485
+        ],
+        [
+          600,
+          243
+        ],
+        [
+          650,
+          243
+        ]
+      ],
+      "label": null,
+      "label_position": null,
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          785,
+          407
+        ],
+        [
+          785,
+          492
+        ]
+      ],
+      "label": "[yes]",
+      "label_position": [
+        800,
+        455
+      ],
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          690,
+          530
+        ],
+        [
+          645,
+          530
+        ],
+        [
+          645,
+          588
+        ],
+        [
+          590,
+          588
+        ]
+      ],
+      "label": "[no]",
+      "label_position": [
+        615,
+        517
+      ],
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          485,
+          625
+        ],
+        [
+          485,
+          650
+        ],
+        [
+          215,
+          650
+        ],
+        [
+          215,
+          670
+        ]
+      ],
+      "label": null,
+      "label_position": null,
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          785,
+          567
+        ],
+        [
+          785,
+          680
+        ]
+      ],
+      "label": "[yes]",
+      "label_position": [
+        800,
+        629
+      ],
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          785,
+          762
+        ],
+        [
+          785,
+          810
+        ]
+      ],
+      "label": null,
+      "label_position": null,
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          785,
+          875
+        ],
+        [
+          785,
+          930
+        ]
+      ],
+      "label": null,
+      "label_position": null,
+      "kind": "arrow"
+    }
+  ]
+}

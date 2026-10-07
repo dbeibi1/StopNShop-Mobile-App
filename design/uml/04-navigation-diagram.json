@@ -1,0 +1,365 @@
+{
+  "title": "Application navigation diagram",
+  "width": 1000,
+  "height": 1080,
+  "nodes": [
+    {
+      "id": "splash",
+      "kind": "action",
+      "bounds": [
+        75,
+        70,
+        190,
+        72
+      ],
+      "lines": [
+        "One second",
+        "branded splash"
+      ]
+    },
+    {
+      "id": "home",
+      "kind": "action",
+      "bounds": [
+        75,
+        220,
+        190,
+        82
+      ],
+      "lines": [
+        "Home"
+      ]
+    },
+    {
+      "id": "categories",
+      "kind": "action",
+      "bounds": [
+        405,
+        220,
+        190,
+        82
+      ],
+      "lines": [
+        "Categories"
+      ]
+    },
+    {
+      "id": "cart",
+      "kind": "action",
+      "bounds": [
+        735,
+        220,
+        190,
+        82
+      ],
+      "lines": [
+        "Cart"
+      ]
+    },
+    {
+      "id": "products",
+      "kind": "action",
+      "bounds": [
+        75,
+        445,
+        190,
+        82
+      ],
+      "lines": [
+        "Product list",
+        "all or category"
+      ]
+    },
+    {
+      "id": "details",
+      "kind": "action",
+      "bounds": [
+        405,
+        445,
+        190,
+        82
+      ],
+      "lines": [
+        "Product details"
+      ]
+    },
+    {
+      "id": "checkout",
+      "kind": "action",
+      "bounds": [
+        735,
+        445,
+        190,
+        82
+      ],
+      "lines": [
+        "Checkout"
+      ]
+    },
+    {
+      "id": "confirmation",
+      "kind": "action",
+      "bounds": [
+        735,
+        695,
+        190,
+        82
+      ],
+      "lines": [
+        "Order",
+        "confirmation"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "points": [
+        [
+          170,
+          142
+        ],
+        [
+          170,
+          220
+        ]
+      ],
+      "label": null,
+      "label_position": null,
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          170,
+          302
+        ],
+        [
+          170,
+          445
+        ]
+      ],
+      "label": null,
+      "label_position": null,
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          500,
+          302
+        ],
+        [
+          500,
+          367
+        ],
+        [
+          170,
+          367
+        ],
+        [
+          170,
+          445
+        ]
+      ],
+      "label": "Select category",
+      "label_position": [
+        470,
+        355
+      ],
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          830,
+          302
+        ],
+        [
+          830,
+          409
+        ],
+        [
+          215,
+          409
+        ],
+        [
+          215,
+          445
+        ]
+      ],
+      "label": "Browse all",
+      "label_position": [
+        535,
+        393
+      ],
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          265,
+          486
+        ],
+        [
+          405,
+          486
+        ]
+      ],
+      "label": "View details",
+      "label_position": [
+        275,
+        470
+      ],
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          265,
+          260
+        ],
+        [
+          330,
+          260
+        ],
+        [
+          330,
+          435
+        ],
+        [
+          500,
+          435
+        ],
+        [
+          500,
+          445
+        ]
+      ],
+      "label": "Featured",
+      "label_position": [
+        357,
+        349
+      ],
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          595,
+          486
+        ],
+        [
+          640,
+          486
+        ],
+        [
+          640,
+          260
+        ],
+        [
+          735,
+          260
+        ]
+      ],
+      "label": "View cart",
+      "label_position": [
+        650,
+        244
+      ],
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          830,
+          302
+        ],
+        [
+          830,
+          445
+        ]
+      ],
+      "label": "Nonempty checkout",
+      "label_position": [
+        725,
+        429
+      ],
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          925,
+          486
+        ],
+        [
+          975,
+          486
+        ],
+        [
+          975,
+          260
+        ],
+        [
+          925,
+          260
+        ]
+      ],
+      "label": null,
+      "label_position": null,
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          830,
+          527
+        ],
+        [
+          830,
+          695
+        ]
+      ],
+      "label": "Place demo order",
+      "label_position": [
+        720,
+        638
+      ],
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          735,
+          736
+        ],
+        [
+          685,
+          736
+        ],
+        [
+          685,
+          825
+        ],
+        [
+          42,
+          825
+        ],
+        [
+          42,
+          260
+        ],
+        [
+          75,
+          260
+        ]
+      ],
+      "label": "Continue shopping or Back",
+      "label_position": [
+        340,
+        810
+      ],
+      "kind": "arrow"
+    }
+  ]
+}

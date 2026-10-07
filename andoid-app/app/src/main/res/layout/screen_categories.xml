@@ -1,0 +1,10 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/screen_scroll" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+<LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+<TextView  style="@style/Text.StopNShop.Title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/nav_categories" />
+<TextView  style="@style/Text.StopNShop.Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/categories_intro" android:layout_marginTop="8dp"/>
+<LinearLayout android:id="@+id/categories_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="20dp">
+
+</LinearLayout>
+<include layout="@layout/prototype_notice"/>
+</LinearLayout>
+</ScrollView>

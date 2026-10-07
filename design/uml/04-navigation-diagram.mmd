@@ -1,0 +1,13 @@
+flowchart TD
+ Splash[One second branded splash] --> Home[Home]
+ Home -->|Categories button or tab| Categories[Categories]
+ Home -->|Browse or shortcut| Products[Product list]
+ Categories -->|Select category| Products
+ Home -->|Featured details| Details[Product details]
+ Products -->|View details| Details
+ Details -->|View cart| Cart[Cart]
+ Cart -->|Browse all| Products
+ Cart -->|Nonempty checkout| Checkout[Checkout]
+ Checkout -->|Back or edit cart| Cart
+ Checkout -->|Valid submission| Confirmation[Order confirmation]
+ Confirmation -->|Continue or Back| Home

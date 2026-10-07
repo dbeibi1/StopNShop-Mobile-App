@@ -1,0 +1,29 @@
+<resources>
+<!-- Approved light design, also used when the system uses dark appearance. -->
+<style name="Base.Theme.StopNShop" parent="Theme.Material3.Light.NoActionBar">
+<item name="colorPrimary">@color/brand_primary</item><item name="colorOnPrimary">@color/on_primary</item>
+<item name="colorSecondary">@color/brand_purple</item><item name="colorOnSecondary">@color/on_primary</item>
+<item name="colorSurface">@color/surface</item><item name="colorOnSurface">@color/text_primary</item>
+<item name="colorError">@color/error</item><item name="android:colorBackground">@color/background</item>
+<item name="android:fontFamily">sans</item><item name="android:windowLightStatusBar">false</item>
+<item name="android:navigationBarColor">@color/brand_primary</item>
+</style>
+<style name="Theme.StopNShop" parent="Base.Theme.StopNShop"/>
+<style name="Base.Theme.StopNShop.Starting" parent="Theme.SplashScreen">
+<item name="windowSplashScreenBackground">@color/brand_primary</item>
+<item name="windowSplashScreenAnimatedIcon">@drawable/splash_logo</item>
+<item name="postSplashScreenTheme">@style/Theme.StopNShop</item>
+<item name="android:statusBarColor">@color/brand_primary</item>
+<item name="android:navigationBarColor">@color/brand_primary</item>
+<item name="android:windowLightStatusBar">false</item>
+</style>
+<style name="Theme.StopNShop.Starting" parent="Base.Theme.StopNShop.Starting"/>
+<style parent="@android:style/TextAppearance" name="Text.StopNShop.Title"><item name="android:textSize">26sp</item><item name="android:textStyle">bold</item><item name="android:textColor">@color/text_primary</item></style>
+<style parent="@android:style/TextAppearance" name="Text.StopNShop.Section"><item name="android:textSize">20sp</item><item name="android:textStyle">bold</item><item name="android:textColor">@color/text_primary</item></style>
+<style parent="@android:style/TextAppearance" name="Text.StopNShop.Body"><item name="android:textSize">16sp</item><item name="android:textColor">@color/text_primary</item></style>
+<style parent="@android:style/TextAppearance" name="Text.StopNShop.Support"><item name="android:textSize">14sp</item><item name="android:textColor">@color/text_secondary</item></style>
+<style name="Widget.StopNShop.Card" parent="Widget.Material3.CardView.Outlined">
+<item name="cardBackgroundColor">@color/surface</item><item name="strokeColor">@color/outline</item>
+<item name="strokeWidth">1dp</item><item name="cardCornerRadius">16dp</item><item name="cardElevation">0dp</item>
+</style>
+</resources>

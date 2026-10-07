@@ -1,0 +1,36 @@
+{
+  "prepared_date": "2026-10-06",
+  "artifact": {
+    "path": "releases/milestones/StopNShop-v1.3-2026-10-06.apk",
+    "bytes": 6096268,
+    "sha256": "41014D699B943DDCDD1CCBC675C9C0D54D9767C09638E6FD470C202695F2187D"
+  },
+  "package": "com.desmondbeibi.stopnshop",
+  "version_name": "1.3",
+  "version_code": 4,
+  "min_sdk": 26,
+  "target_sdk": 37,
+  "debuggable": true,
+  "test_only": false,
+  "debug_signing_v2_verified": true,
+  "signer_certificate_sha256": "4fa0dafc0f941bf4c62ae4ed62b5a88caaf187adfd38577650d5e2bad7674241",
+  "same_key_as_previous_versions": true,
+  "local_tests_passed": 70,
+  "native_ui_test_status": "Not run for version1.3",
+  "physical_phone": {
+    "model_reported": "Samsung Galaxy S9",
+    "android_reported": "10",
+    "tested": true,
+    "record": "evidence/phone/galaxy-s9-v1.3-navigation-results.md",
+    "test_date": "2026-10-06",
+    "tester": "Desmond Beibi",
+    "result": "Passed as reported by student",
+    "scope": "Overall operation and navigation correction works as expected; keyboard/rotation/Details checks not separately confirmed",
+    "basis": "Direct user confirmation that version1.3 works well on phone as expected",
+    "new_corrected_screenshots_supplied": false,
+    "on_phone_version_or_hash_independently_verified": false,
+    "assistant_phone_instrumentation_performed": false
+  },
+  "guide": "documentation/25-bottom-navigation-spacing-fix.md",
+  "status": "Development baseline version1.3; 70 local tests passed and Galaxy S9 operation/navigation correction reported successful; final screenshots/UML/report/presentation/package pending; current native suite not rerun"
+}

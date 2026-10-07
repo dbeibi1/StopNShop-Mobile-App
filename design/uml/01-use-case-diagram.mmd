@@ -1,0 +1,15 @@
+flowchart LR
+ Shopper[Shopper]
+ subgraph App[StopNShop academic shopping app]
+  UC1([Browse categories])
+  UC2([Browse products])
+  UC3([View product details])
+  UC4([Add product to cart])
+  UC5([View or change cart])
+  UC6([View demo confirmation])
+  UC7([Enter customer details and review])
+  UC8([Place demo order])
+  UC9([Validate customer details])
+ end
+ Shopper --- UC1 & UC2 & UC3 & UC4 & UC5 & UC6 & UC7 & UC8
+ UC8 -. include .-> UC9

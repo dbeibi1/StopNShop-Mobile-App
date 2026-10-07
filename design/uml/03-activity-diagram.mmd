@@ -1,0 +1,24 @@
+flowchart TD
+ Start((Start)) --> Home[Fresh splash then Home]
+ Home --> Browse[Browse products]
+ Browse --> Detail{View details?}
+ Detail -->|Yes| Read[Read details and select quantity]
+ Read --> Add[Add product]
+ Detail -->|No| Add
+ Add --> More{Shop more?}
+ More -->|Yes| Browse
+ More -->|No| Cart[View or change cart]
+ Cart --> Empty{Cart empty?}
+ Empty -->|Yes| Notice[Show Browse action]
+ Notice --> Browse
+ Empty -->|No| Review[Snapshot cart and obtain token]
+ Review --> Input[Enter details and review]
+ Input --> Valid{Valid input?}
+ Valid -->|No| Error[Show field errors and retain input]
+ Error --> Input
+ Valid -->|Yes| Matches{Cart and token match review?}
+ Matches -->|No| Changed[Reject stale review]
+ Changed --> Cart
+ Matches -->|Yes| Submit[Create immutable order cache token and clear cart once]
+ Submit --> Confirm[Show demo confirmation]
+ Confirm --> End((End))

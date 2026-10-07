@@ -1,0 +1,248 @@
+{
+  "title": "StopNShop use case diagram",
+  "width": 1000,
+  "height": 1170,
+  "nodes": [
+    {
+      "id": "browse_categories",
+      "kind": "use_case",
+      "center": [
+        625,
+        175
+      ],
+      "lines": [
+        "Browse categories"
+      ]
+    },
+    {
+      "id": "browse_products",
+      "kind": "use_case",
+      "center": [
+        625,
+        280
+      ],
+      "lines": [
+        "Browse products"
+      ]
+    },
+    {
+      "id": "details",
+      "kind": "use_case",
+      "center": [
+        625,
+        385
+      ],
+      "lines": [
+        "View product details"
+      ]
+    },
+    {
+      "id": "add",
+      "kind": "use_case",
+      "center": [
+        625,
+        490
+      ],
+      "lines": [
+        "Add product to cart"
+      ]
+    },
+    {
+      "id": "cart",
+      "kind": "use_case",
+      "center": [
+        625,
+        595
+      ],
+      "lines": [
+        "View or change cart",
+        "quantities and removal"
+      ]
+    },
+    {
+      "id": "confirmation",
+      "kind": "use_case",
+      "center": [
+        625,
+        700
+      ],
+      "lines": [
+        "View demo confirmation"
+      ]
+    },
+    {
+      "id": "review",
+      "kind": "use_case",
+      "center": [
+        625,
+        805
+      ],
+      "lines": [
+        "Enter customer details",
+        "and review order"
+      ]
+    },
+    {
+      "id": "place",
+      "kind": "use_case",
+      "center": [
+        625,
+        910
+      ],
+      "lines": [
+        "Place demo order"
+      ]
+    },
+    {
+      "id": "validate",
+      "kind": "use_case",
+      "center": [
+        625,
+        1050
+      ],
+      "lines": [
+        "Validate customer details"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "points": [
+        [
+          155,
+          545
+        ],
+        [
+          315,
+          175
+        ]
+      ],
+      "label": null,
+      "label_position": null,
+      "kind": "association"
+    },
+    {
+      "points": [
+        [
+          155,
+          545
+        ],
+        [
+          315,
+          280
+        ]
+      ],
+      "label": null,
+      "label_position": null,
+      "kind": "association"
+    },
+    {
+      "points": [
+        [
+          155,
+          545
+        ],
+        [
+          315,
+          385
+        ]
+      ],
+      "label": null,
+      "label_position": null,
+      "kind": "association"
+    },
+    {
+      "points": [
+        [
+          155,
+          545
+        ],
+        [
+          315,
+          490
+        ]
+      ],
+      "label": null,
+      "label_position": null,
+      "kind": "association"
+    },
+    {
+      "points": [
+        [
+          155,
+          545
+        ],
+        [
+          315,
+          595
+        ]
+      ],
+      "label": null,
+      "label_position": null,
+      "kind": "association"
+    },
+    {
+      "points": [
+        [
+          155,
+          545
+        ],
+        [
+          315,
+          700
+        ]
+      ],
+      "label": null,
+      "label_position": null,
+      "kind": "association"
+    },
+    {
+      "points": [
+        [
+          155,
+          545
+        ],
+        [
+          315,
+          805
+        ]
+      ],
+      "label": null,
+      "label_position": null,
+      "kind": "association"
+    },
+    {
+      "points": [
+        [
+          155,
+          545
+        ],
+        [
+          315,
+          910
+        ]
+      ],
+      "label": null,
+      "label_position": null,
+      "kind": "association"
+    },
+    {
+      "points": [
+        [
+          625,
+          954
+        ],
+        [
+          625,
+          1006
+        ]
+      ],
+      "label": "<<include>>",
+      "label_position": [
+        645,
+        988
+      ],
+      "kind": "dependency"
+    }
+  ]
+}

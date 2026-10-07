@@ -1,0 +1,275 @@
+{
+  "title": "Domain classes",
+  "width": 1200,
+  "height": 1090,
+  "nodes": [
+    {
+      "id": "Product",
+      "kind": "class",
+      "bounds": [
+        445,
+        80,
+        310,
+        235
+      ],
+      "attributes": [
+        "-id: String",
+        "-name: String",
+        "-unitPriceToea: long"
+      ],
+      "methods": [
+        "#Product(...)",
+        "+getHandlingInfo(): String"
+      ],
+      "stereotype": "abstract",
+      "reference": false
+    },
+    {
+      "id": "GroceryProduct",
+      "kind": "class",
+      "bounds": [
+        40,
+        350,
+        310,
+        162
+      ],
+      "attributes": [
+        "-perishable: boolean"
+      ],
+      "methods": [
+        "+GroceryProduct(...)",
+        "+getHandlingInfo(): String"
+      ],
+      "stereotype": null,
+      "reference": false
+    },
+    {
+      "id": "HouseholdProduct",
+      "kind": "class",
+      "bounds": [
+        40,
+        560,
+        310,
+        145
+      ],
+      "attributes": [],
+      "methods": [
+        "+HouseholdProduct(...)",
+        "+getHandlingInfo(): String"
+      ],
+      "stereotype": null,
+      "reference": false
+    },
+    {
+      "id": "CartItem",
+      "kind": "class",
+      "bounds": [
+        445,
+        350,
+        310,
+        190
+      ],
+      "attributes": [
+        "-product: Product",
+        "-quantity: int"
+      ],
+      "methods": [
+        "+CartItem(Product, int)",
+        "+getSubtotalToea(): long"
+      ],
+      "stereotype": null,
+      "reference": false
+    },
+    {
+      "id": "Cart",
+      "kind": "class",
+      "bounds": [
+        850,
+        350,
+        310,
+        230
+      ],
+      "attributes": [
+        "-items: ArrayList<CartItem>"
+      ],
+      "methods": [
+        "+addProduct(Product, int)",
+        "+setQuantity(String, int)",
+        "+removeProduct(String)",
+        "+calculateTotalToea(): long"
+      ],
+      "stereotype": null,
+      "reference": false
+    },
+    {
+      "id": "Customer",
+      "kind": "class",
+      "bounds": [
+        40,
+        760,
+        310,
+        225
+      ],
+      "attributes": [
+        "-name: String",
+        "-phone: String",
+        "-location: String"
+      ],
+      "methods": [
+        "+Customer(...)",
+        "+validate(...): Map"
+      ],
+      "stereotype": null,
+      "reference": false
+    },
+    {
+      "id": "Order",
+      "kind": "class",
+      "bounds": [
+        445,
+        760,
+        310,
+        225
+      ],
+      "attributes": [
+        "-customer: Customer",
+        "-lines: List<OrderLine>",
+        "-totalToea: long"
+      ],
+      "methods": [
+        "+Order(...)",
+        "+getTotalToea(): long"
+      ],
+      "stereotype": null,
+      "reference": false
+    },
+    {
+      "id": "OrderLine",
+      "kind": "class",
+      "bounds": [
+        850,
+        760,
+        310,
+        200
+      ],
+      "attributes": [
+        "-unitPriceToea: long",
+        "-quantity: int"
+      ],
+      "methods": [
+        "+OrderLine(CartItem)",
+        "+getSubtotalToea(): long"
+      ],
+      "stereotype": null,
+      "reference": false
+    }
+  ],
+  "edges": [
+    {
+      "points": [
+        [
+          350,
+          435
+        ],
+        [
+          380,
+          435
+        ],
+        [
+          380,
+          145
+        ],
+        [
+          445,
+          145
+        ]
+      ],
+      "label": null,
+      "label_position": null,
+      "kind": "inheritance"
+    },
+    {
+      "points": [
+        [
+          350,
+          625
+        ],
+        [
+          397,
+          625
+        ],
+        [
+          397,
+          255
+        ],
+        [
+          445,
+          255
+        ]
+      ],
+      "label": null,
+      "label_position": null,
+      "kind": "inheritance"
+    },
+    {
+      "points": [
+        [
+          600,
+          350
+        ],
+        [
+          600,
+          315
+        ]
+      ],
+      "label": null,
+      "label_position": null,
+      "kind": "arrow"
+    },
+    {
+      "points": [
+        [
+          850,
+          465
+        ],
+        [
+          755,
+          465
+        ]
+      ],
+      "label": null,
+      "label_position": null,
+      "kind": "composition"
+    },
+    {
+      "points": [
+        [
+          755,
+          870
+        ],
+        [
+          850,
+          870
+        ]
+      ],
+      "label": null,
+      "label_position": null,
+      "kind": "composition"
+    },
+    {
+      "points": [
+        [
+          445,
+          870
+        ],
+        [
+          350,
+          870
+        ]
+      ],
+      "label": null,
+      "label_position": null,
+      "kind": "arrow"
+    }
+  ]
+}

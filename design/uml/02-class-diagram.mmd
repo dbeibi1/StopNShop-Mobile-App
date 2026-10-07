@@ -1,0 +1,118 @@
+classDiagram
+direction TB
+class Product {
+<<abstract>>
+-String id
+-String name
+-long unitPriceToea
+#Product(...)
++getHandlingInfo() String
+}
+class GroceryProduct {
+-boolean perishable
++GroceryProduct(...)
++getHandlingInfo() String
+}
+class HouseholdProduct {
++HouseholdProduct(...)
++getHandlingInfo() String
+}
+class CartItem {
+-Product product
+-int quantity
++CartItem(Product, int)
++getSubtotalToea() long
+}
+class Cart {
+-ArrayList~CartItem~ items
++addProduct(Product, int)
++setQuantity(String, int)
++removeProduct(String)
++calculateTotalToea() long
+}
+class Customer {
+-String name
+-String phone
+-String location
++Customer(...)
++validate(...) Map
+}
+class Order {
+-Customer customer
+-List~OrderLine~ lines
+-long totalToea
++Order(...)
++getTotalToea() long
+}
+class OrderLine {
+-long unitPriceToea
+-int quantity
++OrderLine(CartItem)
++getSubtotalToea() long
+}
+class StopNShopApplication {
+-ShoppingSession shoppingSession
+-LaunchSplash launchSplash
++getShoppingSession()
++getLaunchSplash()
+}
+class LaunchSplash {
+-long firstFrameUptime
+-boolean finished
++shouldKeepOnScreen(long)
+}
+class ProductImages {
++bind(ImageView, Product)
++captionFor(Product) int
+}
+class MainActivity {
+-ShoppingSession session
+-Screen screen
+-renderScreen(int)
+-bindDetails()
+-submitDemoOrder()
+}
+class ShoppingSession {
+-Cart cart
+-ProductRepository productRepository
+-CheckoutService checkoutService
++getCart()
++beginCheckout() String
++placeDemoOrder(...) Order
++getLastOrder() Order
+}
+class ProductRepository {
+-ArrayList~Product~ products
++findById(String) Product
++findByCategory(String) List
++getProducts() List
+}
+class CheckoutService {
+-Cart cart
+-String pendingToken
+-Map completedOrders
++CheckoutService(Cart)
++beginCheckout() String
++placeDemoOrder(...) Order
+}
+Product <|-- GroceryProduct
+Product <|-- HouseholdProduct
+Cart "1" *-- "0..*" CartItem
+CartItem "0..*" --> "1" Product
+Order "1" *-- "1..*" OrderLine
+Order "0..*" --> "1" Customer
+StopNShopApplication "1" *-- "1" ShoppingSession
+StopNShopApplication "1" *-- "1" LaunchSplash
+MainActivity --> ShoppingSession
+MainActivity ..> LaunchSplash
+MainActivity ..> ProductImages
+ShoppingSession "1" *-- "1" Cart
+ShoppingSession "1" *-- "1" ProductRepository
+ShoppingSession "1" *-- "1" CheckoutService
+ShoppingSession --> Order : latest
+CheckoutService --> Cart : same instance
+CheckoutService ..> Order : creates and caches
+ProductRepository "1" --> "1..*" Product
+ProductImages ..> Product
+Application <|-- StopNShopApplication
+AppCompatActivity <|-- MainActivity

@@ -1,0 +1,23 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" style="@style/Widget.StopNShop.Card"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp"
+    android:clickable="true" android:focusable="true" app:rippleColor="@color/accent_soft">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center_vertical" android:padding="16dp"
+        android:importantForAccessibility="noHideDescendants">
+        <ImageView android:id="@+id/category_icon" android:layout_width="48dp" android:layout_height="48dp"
+            android:padding="10dp" android:background="@drawable/rounded_icon_background"
+            android:contentDescription="@null" app:tint="@color/brand_primary"/>
+        <LinearLayout android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:layout_marginStart="12dp" android:orientation="vertical">
+            <TextView android:id="@+id/category_title" style="@style/Text.StopNShop.Section"
+                android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/category_description" style="@style/Text.StopNShop.Support"
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+            <TextView android:id="@+id/category_count" style="@style/Text.StopNShop.Support"
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+        </LinearLayout>
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:layout_marginStart="8dp"
+            android:src="@drawable/ic_forward" android:contentDescription="@null" app:tint="@color/text_secondary"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

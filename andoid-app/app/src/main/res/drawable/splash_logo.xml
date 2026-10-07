@@ -1,0 +1,11 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- The original square logo fits inside the system splash icon's safe circle. -->
+    <item>
+        <shape android:shape="rectangle">
+            <size android:width="288dp" android:height="288dp"/>
+            <solid android:color="@android:color/transparent"/>
+        </shape>
+    </item>
+    <item android:width="128dp" android:height="128dp"
+        android:gravity="center" android:drawable="@drawable/stop_shop_logo"/>
+</layer-list>

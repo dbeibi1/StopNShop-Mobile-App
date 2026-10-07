@@ -1,0 +1,24 @@
+# Android generated and machine-local files
+**/.gradle/
+**/build/
+**/local.properties
+**/.idea/
+*.iml
+*.jks
+*.keystore
+*.hprof
+
+# Secrets and local tooling
+.env
+.env.*
+!.env.example
+.codex/
+
+# Scratch/render output; preserve registered evidence separately
+tmp/
+*.log
+!evidence/**/*.log
+Thumbs.db
+.DS_Store
+
+# Do not ignore Gradle wrapper JARs, source assets, screenshots or final APKs.

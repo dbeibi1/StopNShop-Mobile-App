@@ -1,0 +1,23 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/screen_scroll" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+<LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+<com.google.android.material.card.MaterialCardView style="@style/Widget.StopNShop.Card" android:layout_width="match_parent" android:layout_height="wrap_content" >
+<LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+<TextView  style="@style/Text.StopNShop.Support" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/scenario_notice" />
+<TextView  style="@style/Text.StopNShop.Title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/welcome" android:layout_marginTop="12dp"/>
+<TextView  style="@style/Text.StopNShop.Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/home_intro" android:layout_marginTop="8dp"/>
+<com.google.android.material.button.MaterialButton android:id="@+id/home_browse"  android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:text="@string/browse_products"/>
+<com.google.android.material.button.MaterialButton android:id="@+id/home_categories" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:text="@string/view_categories"/>
+</LinearLayout>
+</com.google.android.material.card.MaterialCardView>
+<TextView  style="@style/Text.StopNShop.Section" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/shop_by_category" android:layout_marginTop="24dp"/>
+<LinearLayout android:id="@+id/home_category_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="8dp">
+
+</LinearLayout>
+<TextView  style="@style/Text.StopNShop.Section" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/featured_samples" android:layout_marginTop="16dp"/>
+<TextView  style="@style/Text.StopNShop.Support" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/demo_catalogue" android:layout_marginTop="8dp"/>
+<LinearLayout android:id="@+id/home_products" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="12dp">
+
+</LinearLayout>
+<include layout="@layout/prototype_notice"/>
+</LinearLayout>
+</ScrollView>

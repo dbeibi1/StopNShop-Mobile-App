@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/screen_scroll" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+        <com.google.android.material.card.MaterialCardView style="@style/Widget.StopNShop.Card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                <TextView style="@style/Text.StopNShop.Title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/order_placed"/>
+                <TextView style="@style/Text.StopNShop.Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/confirmation_intro"/>
+                <TextView style="@style/Text.StopNShop.Support" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/order_reference"/>
+                <TextView android:id="@+id/confirmation_reference" style="@style/Text.StopNShop.Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:textIsSelectable="true"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <include layout="@layout/prototype_notice"/>
+        <com.google.android.material.card.MaterialCardView style="@style/Widget.StopNShop.Card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                <TextView style="@style/Text.StopNShop.Section" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/confirmation_customer"/>
+                <TextView style="@style/Text.StopNShop.Support" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/customer_name"/>
+                <TextView android:id="@+id/confirmation_name" style="@style/Text.StopNShop.Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+                <TextView style="@style/Text.StopNShop.Support" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/customer_phone"/>
+                <TextView android:id="@+id/confirmation_phone" style="@style/Text.StopNShop.Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+                <TextView style="@style/Text.StopNShop.Support" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/customer_location"/>
+                <TextView android:id="@+id/confirmation_location" style="@style/Text.StopNShop.Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+                <TextView style="@style/Text.StopNShop.Support" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/confirmation_notice"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView style="@style/Widget.StopNShop.Card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                <TextView style="@style/Text.StopNShop.Section" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/review_heading"/>
+                <LinearLayout android:id="@+id/review_lines" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
+                <TextView android:id="@+id/review_count" style="@style/Text.StopNShop.Support" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+                <TextView style="@style/Text.StopNShop.Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/demo_total"/>
+                <TextView android:id="@+id/review_total" style="@style/Text.StopNShop.Title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.button.MaterialButton android:id="@+id/confirmation_continue" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:layout_marginTop="12dp" android:text="@string/continue_shopping"/>
+    </LinearLayout>
+</ScrollView>
